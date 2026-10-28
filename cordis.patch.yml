@@ -1,0 +1,5 @@
+# Bundle manifest picked up by `dsh plugin add dsh-chat-shell`.
+# The plugin is a browser-side package; the host half is a no-op.
+- insert:
+    - id: chat-shell
+      name: dsh-chat-shell
