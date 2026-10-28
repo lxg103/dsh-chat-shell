@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# patching artefacts (created by scripts/patch-persistent-login.mjs on demand)
+scripts/handoff-*.ps1
+scripts/*-patch.cmd
+scripts/handoff-*.json
+scripts/handoff-*.json.log
+resources/
+app.next/
+
+# editors and OS noise
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
