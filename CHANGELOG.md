@@ -4,6 +4,21 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and this project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.1]
+
+### Fixed
+
+- A site opened during the first paint after launch could stay on “正在连接 AI
+  网页…” forever: the guest was created before its container had a layout box, so
+  the webview never attached and never loaded. The container is now re-laid out
+  right after mount and again when the panel is shown, which is the same push a
+  manual site switch used to provide.
+- A site that still has not started after 15 s is rebuilt automatically, reusing
+  its session so the login survives; the manual reload button only appears after
+  the automatic attempts are used up.
+- Switching back to Chat now revives the selected site even when the plugin was
+  mounted straight into Harness mode.
+
 ## [0.5.0] — first public release
 
 ### Added
