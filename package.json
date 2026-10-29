@@ -1,6 +1,6 @@
 {
   "name": "dsh-chat-shell",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Chat/Harness switch for DeepSeek Harness: embed DeepSeek, Doubao or ChatGPT in the whole window, and switch back to Harness in one click.",
   "keywords": [
     "dsh",
